@@ -1,0 +1,196 @@
+/* General styles for all devices */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping for flex items */
+  justify-content: space-around; /* Space between items */
+}
+
+.projectCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px; /* Space between cards */
+  width: calc(33.333% - 20px); /* Default to 3 cards per row with space */
+  transition: transform 0.3s ease;
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #d43f52;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button svg {
+  height: 23px;
+}
+
+.button:hover {
+  background-color: #bf3749;
+  transform: translateY(-3px); /* Adds a slight lift effect on hover */
+}
+
+.icon {
+  margin-right: 10px; /* Space between the icon and text */
+  font-size: 1rem; /* Increases icon size */
+  transition: transform 0.3s ease;
+}
+
+.button:hover .icon {
+  transform: rotate(10deg); /* Adds a slight rotation effect on hover */
+}
+
+/* Responsive Design - Small Devices (Smartphones) */
+@media (max-width: 600px) {
+  .projectCard {
+    background-color: #242424;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    max-width: 330px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    width: 100%; /* Full-width cards for small screens */
+    margin-bottom: 15px;
+    margin-left: 80px;
+  }
+  .container {
+    max-width: 900px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .button svg {
+    height: 23px;
+  }
+
+  .icon {
+    font-size: 1.3rem;
+  }
+
+  .projectImage {
+    width: 100%; /* Ensure full width on small screens */
+    height: auto;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .projectCard {
+    width: calc(50% - 20px); /* Two cards per row for tablets */
+    background-color: #242424;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    margin-left: 60px;
+  }
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .projectCard {
+      width: 700px;
+      margin-left: 60px;
+    }
+  }
+
+  .buttons {
+    justify-content: space-around;
+  }
+  .button svg {
+    height: 23px;
+  }
+  .container {
+    max-width: 1012px;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .projectCard {
+    background-color: #242424;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    max-width: 330px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    width: calc(33.333% - 20px); /* Three cards per row for desktops */
+  }
+
+  .button {
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+  .button svg {
+    height: 23px;
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+
+  .container {
+    max-width: 1012px;
+  }
+}
+
+/* Very Large Devices (Widescreen) */
+@media (min-width: 1441px) {
+  .projectCard {
+    background-color: #242424;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    max-width: 330px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    width: calc(25% - 20px); /* Four cards per row for larger screens */
+  }
+  .container {
+    max-width: 1098px;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+  .button svg {
+    height: 23px;
+  }
+}

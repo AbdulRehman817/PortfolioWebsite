@@ -1,0 +1,135 @@
+/* General styles */
+#about {
+  padding: 5rem 20px;
+  background-color: black;
+  color: white;
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 40px; /* Space between flex items */
+  justify-content: flex-start; /* Align items to the start */
+}
+
+/* Title and text */
+.text {
+  color: #d43f52;
+}
+
+.about-text {
+  color: #999;
+  font-size: 1rem; /* Base font size */
+  line-height: 1.5;
+  margin: 0;
+  max-width: 600px; /* Restrict width for better readability */
+}
+
+/* Skills container */
+.skills-container {
+  max-width: 300px; /* Define a max-width for skills section */
+}
+
+.skills-container h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Animation styles */
+.animated.fadeInLeft {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animated {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.6s ease-in, transform 0.6s ease-in;
+}
+
+/* Media Queries */
+@media (min-width: 400px) {
+  .loader {
+    margin-left: 30px;
+  }
+  h2 {
+    font-size: 24px; /* Slightly smaller for small devices */
+  }
+  .about-text {
+    font-size: 0.95rem; /* Adjust font size */
+  }
+  .skills-container {
+    max-width: 280px;
+    /* Adjust skills width */
+  }
+  .skills-container h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 550px) {
+  h2 {
+    font-size: 26px; /* Medium devices */
+  }
+}
+
+@media (min-width: 750px) {
+  h2 {
+    font-size: 28px; /* Tablet */
+  }
+
+  .flex-container {
+    flex-direction: row; /* Ensure row layout */
+  }
+
+  .about-text {
+    font-size: 1rem; /* Reset to base size */
+  }
+
+  .skills-container {
+    max-width: 350px; /* Wider skills section */
+  }
+}
+
+@media (min-width: 1000px) {
+  h2 {
+    font-size: 30px; /* Desktop */
+  }
+
+  .about-text {
+    font-size: 1.1rem; /* Larger font size for desktop */
+  }
+
+  .skills-container {
+    max-width: 400px; /* Even wider skills section */
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 32px; /* Larger size for HD screens */
+  }
+
+  .about-text {
+    font-size: 1.2rem; /* Increase font size */
+  }
+
+  .flex-container {
+    justify-content: space-between; /* Evenly distribute items */
+  }
+
+  .skills-container {
+    max-width: 450px; /* Maximum width for skills on large screens */
+  }
+}

@@ -1,0 +1,125 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+nav {
+  backdrop-filter: blur(10px); /* Adds blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent; /* Navbar background color */
+  color: white;
+  z-index: 1000;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Smooth transition */
+}
+
+/* When scrolled, add background and blur */
+.navbar.scrolled {
+  background-color: red; /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Adds blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Menu icon (hamburger and close) */
+.menu-icon {
+  display: none; /* Initially hidden on larger devices */
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Navbar links (hidden on mobile) */
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.navbar-links li a .icon {
+  margin-right: 8px;
+}
+
+.navbar-links li a:hover {
+  color: #d43f52;
+  cursor: pointer; /* Hover effect */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  nav {
+    backdrop-filter: blur(10px); /* Adds blur effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 97%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Navbar background color */
+    color: white;
+    z-index: 1000;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Smooth transition */
+  }
+
+  .menu-icon {
+    display: block; /* Show menu icon on smaller screens */
+  }
+
+  .navbar-links {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    display: none; /* Initially hidden */
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .navbar-links li a {
+    font-size: 1.2rem;
+  }
+}

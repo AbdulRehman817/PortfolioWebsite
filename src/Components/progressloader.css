@@ -1,0 +1,30 @@
+/* components/progress.css */
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.progress-bar {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: #e63946;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  height: 25px;
+  line-height: 30px;
+  border-radius: 10px 0 0 10px;
+  width: 0;
+  transition: width 1.5s ease-in-out;
+}

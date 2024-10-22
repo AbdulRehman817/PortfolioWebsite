@@ -1,0 +1,98 @@
+/* General styles */
+#home {
+  color: white;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title styles */
+.hero-title {
+  border: 2px solid #d43f52;
+  color: #d43f52;
+  display: inline-block;
+  letter-spacing: 6px;
+  padding: 25px 35px;
+  margin: 35px 0;
+  font-size: 2.4rem; /* Default font size for larger screens */
+}
+
+/* Description styles */
+.hero-description {
+  line-height: 28px;
+  margin: 0 -156px 15px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 70px;
+  margin-top: -30px;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block; /* Align button inline */
+}
+
+/* Media Queries */
+@media (max-width: 400px) {
+  .hero-title {
+    font-size: 1.8rem;
+    margin-left: 30px; /* Smaller title for very small devices */
+  }
+  .animation {
+    margin-left: 40px;
+    /* font-size: 30px; */
+  }
+
+  .hero-description {
+    margin: 0 -60px 15px; /* Reduce margin for smaller screens */
+    font-size: 12px; /* Smaller font size */
+    margin-left: -3px;
+  }
+  .btn {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 400px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-description {
+    margin: 0 -35px 15px; /* Reduce margin for smaller screens */
+    font-size: 15px; /* Smaller font size */
+  }
+}
+
+@media (min-width: 550px) {
+  .hero-title {
+    font-size: 2.2rem; /* Medium devices */
+  }
+  .hero-description {
+    margin: 0 -30px 15px; /* Reduce margin for smaller screens */
+    font-size: 15px; /* Smaller font size */
+  }
+}
+
+@media (min-width: 750px) {
+  .hero-title {
+    font-size: 2.4rem; /* Tablet */
+  }
+
+  .hero-description {
+    font-size: 15px; /* Adjust description font size */
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero-title {
+    font-size: 2.6rem; /* Desktop */
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 2.8rem; /* Larger title for HD screens */
+  }
+}

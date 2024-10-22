@@ -1,0 +1,417 @@
+html,
+body {
+  /* Prevents both vertical and horizontal scrolling */
+  height: 100%; /* Ensure the body takes up the full height */
+}
+html,
+body {
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.btn {
+  border: 2px solid white;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 2px;
+  font-size: 20px;
+  margin-top: 15px;
+  transition: all 0.6s ease;
+}
+
+.btn {
+  font-weight: bold;
+}
+
+.fade-in-out-container {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 100px; /* Set height for the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* To allow overlap */
+}
+
+.fade-text {
+  position: absolute; /* To overlap text */
+  opacity: 0; /* Start invisible */
+  transition: opacity 1s ease-in-out; /* Smooth fade transition */
+}
+
+/* Fade-in effect */
+.fade-in {
+  opacity: 1; /* Fully visible */
+}
+
+/* Fade-out effect */
+.fade-out {
+  opacity: 0; /* Invisible */
+}
+
+/* Circle styling */
+.circle {
+  width: 60px;
+  height: 60px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the div circular */
+  border: 2px solid white; /* White outline */
+  /* Black background */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centers the icon */
+  position: relative; /* Ensures the icon stays centered */
+  padding: 15px;
+}
+
+/* Icon styling */
+.icon-link {
+  font-size: 24px; /* Adjust the size of the icon */
+  color: #d50030; /* Red color for the icon, matching the image */
+  position: relative;
+  text-align: center;
+}
+
+/* Optional hover effect for the circle */
+.circle:hover {
+  background-color: white;
+  cursor: pointer;
+  /* Change outline color on hover */
+  transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  transition: all 0.5s ease;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  transition: all 0.5s ease;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  transition: all 0.5s ease;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  transition: all 0.5s ease;
+}
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* components/ProgressBar.module.css */
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.progressBar {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: #e63946;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  height: 10px;
+  line-height: 30px;
+  border-radius: 10px 0 0 10px;
+  width: 0;
+  transition: width 1.5s ease-in-out;
+}
+.percentage {
+  margin-left: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  transition: all 0.5s ease;
+  /*  */
+}
+.container {
+  text-align: center;
+  padding: 50px;
+  background-color: #1a1a1a; /* Dark background */
+  color: white; /* Main text color */
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white; /* Title color in white */
+}
+
+.highlight {
+  color: #1a1a1a; /* Highlighted part in dark background color */
+  background-color: #ff6b7f; /* Highlight background */
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: white; /* Subtitle in white */
+}
+
+.projectsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projectCard {
+  background-color: #1a1a1a; /* Dark card background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(255, 107, 127, 0.3);
+  color: white; /* White text */
+  text-align: left;
+  border: 1px solid #ff6b7f; /* Border to enhance card visibility */
+}
+
+.projectImage {
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.projectCard h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ff6b7f; /* Card header color */
+}
+
+.projectCard p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: white; /* Paragraph text in white */
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  background-color: #ff6b7f; /* Button background */
+  color: white; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Gap between icon and text */
+}
+
+.button:hover {
+  background-color: #ff8f9f; /* Hover effect */
+}
+
+.button svg {
+  width: 15px; /* Icon size */
+  height: 15px;
+  margin-top: 2px;
+}
+.precard {
+  margin-top: -90px;
+}
+.precard img {
+  width: 600px;
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  transition: all 0.5s ease;
+}
+
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 3s;
+  transition: all 0.5s ease;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.projectCard:hover {
+  transform: scale(1.05);
+}
+.precard:hover {
+  transform: "scale(1.2)";
+}
