@@ -96,3 +96,9 @@
     font-size: 2.8rem; /* Larger title for HD screens */
   }
 }
+@media (min-width: 300px) {
+  .hero-title {
+    font-size: 2.2rem; /* Larger title for HD screens */
+    margin-left: 60px;
+  }
+}

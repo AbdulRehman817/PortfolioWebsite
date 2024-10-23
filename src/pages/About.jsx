@@ -64,8 +64,8 @@ const About = () => {
               expand my knowledge and skill set.
             </p>
           </div>
-          <div className="skills-container md:ml-[30px] md:flex-row lg:flex-row lg:mr-20">
-            <h1>Skills</h1>
+          <div className="skills-container   md:ml-[30px] md:flex-row lg:flex-row lg:mr-20">
+            <h1 className="mb-[24px] text-[30px]"> Skills</h1>
             <div className="w-[250px] loader">
               <Progressloader label="Web Design" percentage={95} />
               <Progressloader label="Mobile Apps" percentage={80} />
