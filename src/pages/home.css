@@ -58,6 +58,8 @@
 @media (min-width: 400px) {
   .hero-title {
     font-size: 2rem;
+    margin-left: 14px;
+    width: 320px;
   }
   .hero-description {
     margin: 0 -35px 15px; /* Reduce margin for smaller screens */
@@ -68,6 +70,9 @@
 @media (min-width: 550px) {
   .hero-title {
     font-size: 2.2rem; /* Medium devices */
+
+    margin-left: 14px;
+    width: 320px;
   }
   .hero-description {
     margin: 0 -30px 15px; /* Reduce margin for smaller screens */
@@ -78,6 +83,7 @@
 @media (min-width: 750px) {
   .hero-title {
     font-size: 2.4rem; /* Tablet */
+    width: 420px;
   }
 
   .hero-description {
@@ -88,17 +94,13 @@
 @media (min-width: 1000px) {
   .hero-title {
     font-size: 2.6rem; /* Desktop */
+    width: 500px;
   }
 }
 
 @media (min-width: 1200px) {
   .hero-title {
     font-size: 2.8rem; /* Larger title for HD screens */
-  }
-}
-@media (min-width: 300px) {
-  .hero-title {
-    font-size: 2.2rem; /* Larger title for HD screens */
-    margin-left: 60px;
+    width: 500px;
   }
 }

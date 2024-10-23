@@ -51,7 +51,7 @@ const Home = () => {
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-neutral-content text-center">
           <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-2xl mx-auto p-4 sm:p-5 md:p-8 animated fadeIn">
-            <h1 className="hero-title text-2xl sm:text-3xl sm:ml-20px md:text-4xl lg:text-5xl font-bold">
+            <h1 className="hero-title text-2xl sm:text-3xl  md:text-4xl lg:text-5xl font-bold">
               Abdul Rehman
             </h1>
             <Animation className="animation" />

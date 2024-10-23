@@ -510,3 +510,13 @@
     width: 220px;
   }
 }
+@media (min-width: 1600px) and(max-width:1536px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+@media (min-width: 1978px) and(max-width:1600px) {
+  .container {
+    max-width: 1600px;
+  }
+}
