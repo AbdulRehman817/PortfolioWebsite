@@ -85,7 +85,7 @@ const Projects = () => {
                     <FaGithubSquare className="icons" /> GitHub
                   </a>
                   <a
-                    href="https://weather-app-gules-alpha-61.vercel.app/"
+                    href="https://dapper-heliotrope-5ece0d.netlify.app/"
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
