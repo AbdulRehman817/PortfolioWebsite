@@ -38,7 +38,7 @@
 @media (max-width: 400px) {
   .hero-title {
     font-size: 1.8rem;
-    margin-left: 30px; /* Smaller title for very small devices */
+    margin-left: 65px; /* Smaller title for very small devices */
   }
   .animation {
     margin-left: 40px;
