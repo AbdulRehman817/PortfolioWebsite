@@ -77,7 +77,7 @@ const Projects = () => {
                 </p>
                 <div className="buttons">
                   <a
-                    href="https://github.com/AbdulRehman817/Weather-App"
+                    href="https://github.com/AbdulRehman817/Blogging-Website-using-react-and-firebase"
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -123,7 +123,7 @@ const Projects = () => {
                 </p>
                 <div className="buttons">
                   <a
-                    href="https://meme-maker-126d.vercel.app/"
+                    href="https://github.com/AbdulRehman817/Meme-Maker"
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -131,7 +131,7 @@ const Projects = () => {
                     <FaGithubSquare className="icons" /> GitHub
                   </a>
                   <a
-                    href="https://weather-app-gules-alpha-61.vercel.app/"
+                    href="https://meme-maker-126d.vercel.app/"
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
