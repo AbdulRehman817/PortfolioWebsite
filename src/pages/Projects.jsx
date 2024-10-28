@@ -85,7 +85,7 @@ const Projects = () => {
                     <FaGithubSquare className="icons" /> GitHub
                   </a>
                   <a
-                    href="https://fanciful-moxie-470400.netlify.app/"
+                    href="https://input-88449.web.app/"
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
