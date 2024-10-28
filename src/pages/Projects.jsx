@@ -85,7 +85,7 @@ const Projects = () => {
                     <FaGithubSquare className="icons" /> GitHub
                   </a>
                   <a
-                    href="https://dapper-heliotrope-5ece0d.netlify.app/"
+                    href="https://fanciful-moxie-470400.netlify.app/"
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
